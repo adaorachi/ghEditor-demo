@@ -1,0 +1,38 @@
+.code-container {
+  border: 2px solid #f6f8fa;
+  padding: 1rem 1rem 0rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.editable-container {
+  background-color: #f6f8fa;
+  margin: 1rem -1rem 0 -1rem;
+}
+
+.code-header {
+  border-bottom: 1px solid #d1d5da;
+  padding: 0.5rem;
+}
+
+.editable {
+  padding: 1rem;
+}
+
+.btn,
+.editable {
+  border: none;
+  outline: none;
+}
+
+.run {
+  background-color: #07abcc;
+}
+
+.run:hover {
+  background-color: #058ca7;
+}
+
+pre,
+code {
+  margin: 0 !important;
+}
