@@ -1,7 +1,66 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  /* color: #606c71; */
+}
+
+.page-header {
+  color: #fff;
+  text-align: center;
+  padding: 4rem 6rem;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+}
+
+.project-name {
+  font-weight: bolder;
+  font-size: 3.25rem;
+  margin-bottom: 2rem;
+}
+
+.project-tagline {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  opacity: 0.7;
+}
+
+.button {
+  display: inline-block;
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.button:hover {
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  background-color: rgba(255,255,255,.2);
+  border-color: rgba(255,255,255,.3);
+}
+
+.main-content {
+  margin: 3rem auto;
+}
+
+.main-content .demo-title {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #058ca7;
+}
+
 .code-container {
   border: 2px solid #f6f8fa;
   padding: 1rem 1rem 0rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .editable-container {
@@ -35,4 +94,9 @@
 pre,
 code {
   margin: 0 !important;
+  font-size: 0.75rem;
+}
+
+.form-group {
+  margin-bottom: 3rem;
 }
