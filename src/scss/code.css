@@ -30,7 +30,7 @@ body {
 
 .button {
   display: inline-block;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.08);
@@ -40,10 +40,10 @@ body {
 }
 
 .button:hover {
-  color: rgba(255,255,255,.8);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  background-color: rgba(255,255,255,.2);
-  border-color: rgba(255,255,255,.3);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .main-content {
@@ -99,4 +99,20 @@ code {
 
 .form-group {
   margin-bottom: 3rem;
+}
+
+.view-guide {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #c3c1c1;
+}
+
+.view-guide:hover {
+  text-decoration: none;
+  color: #c3c1c1;
 }
