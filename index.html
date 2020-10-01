@@ -16,9 +16,9 @@
     <h1 class="project-name">SnipDown Markdown Editor</h1>
     <h2 class="project-tagline">SnipDown is a simple, embeddable, and beautiful JS markdown editor</h2>
     <div>
-      <a href="#" class="button">View on GitHub</a>
-      <a href="#" class="button">Install from NPM</a>
-      <a href="#" class="button">Install from NPM</a>
+      <a href="https://github.com/adaorachi/SnipDown" class="button">View on GitHub</a>
+      <a href="https://www.npmjs.com/package/snipdown" class="button">Install from NPM</a>
+      <a href="#" class="button">Download File</a>
     </div>
   </div>
   <div class="main-content container">
@@ -42,13 +42,17 @@
             <div class="editable" contenteditable="true">
               <pre><code id="code-snippet-snip1">const sniptext1 = snipDown();
 sniptext1.markDown(
-container: 'textarea-1', // id of textarea
-headerToolbar: {
-  icons: 'heading|bold|italic|blockquote|strikethrough|horizontal-rule|code|link|code-block|unordered-list|ordered-list|tasklist|mention|image|table|'
-},
-inlineToolbar: 'heading|bold|italic|code|link|unordered-list',
-inlineShortcut: true,
-indentWithTab: true,
+  container: 'textarea-1', // id of textarea
+  headerToolbar: {
+    icons: 'heading|bold|italic|blockquote|strikethrough|horizontal-rule|code|link|code-block|unordered-list|ordered-list|tasklist|mention|image|table|'
+  },
+  inlineToolbar: 'heading|bold|italic|code|link|unordered-list',
+  inlineShortcut: true,
+  indentWithTab: true,
+  splitScreen: {
+    enabled: true,
+  },
+  toolbarEmoji: true,
 );</code></pre>
             </div>
           </div>
@@ -74,10 +78,11 @@ indentWithTab: true,
             <div class="editable" contenteditable="true">
               <pre><code id="code-snippet-snip1">const sniptext1 = snipDown();
 sniptext1.markDown(
-container: 'textarea-1', // id of textarea
-inlineEmoji: {
-  enabled: true,
-});</code></pre>
+  container: 'textarea-1', // id of textarea
+  inlineEmoji: {
+    enabled: true,
+  }
+);</code></pre>
             </div>
           </div>
 
@@ -102,11 +107,12 @@ inlineEmoji: {
             <div class="editable" contenteditable="true">
               <pre><code id="code-snippet-snip1">const sniptext1 = snipDown();
 sniptext1.markDown(
-container: 'textarea-1', // id of textarea
-uploadImage: {
-  enabled: true,
-  config: { storageBucket: 'your-firebase-app-name.appspot.com' },
-});</code></pre>
+  container: 'textarea-1', // id of textarea
+  uploadImage: {
+    enabled: true,
+    config: { storageBucket: 'your-firebase-app-name.appspot.com' },
+  }
+);</code></pre>
             </div>
           </div>
 
@@ -137,7 +143,8 @@ sniptext1.markDown(
   autoSave: {
     enabled: true,
     delay: 5000,
-});</code></pre>
+  }
+);</code></pre>
             </div>
           </div>
 
