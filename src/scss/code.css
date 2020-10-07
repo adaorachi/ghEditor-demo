@@ -69,7 +69,8 @@ body {
 }
 
 .textarea {
-  position: absolute; z-index: -99999;
+  position: absolute; 
+  z-index: -99999;
 }
 
 .code-header {
