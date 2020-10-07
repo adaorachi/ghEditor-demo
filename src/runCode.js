@@ -1,26 +1,21 @@
 const runCode = () => {
   document.addEventListener('click', (e) => {
-    if (e.target.classList.contains('run')){
+    if (e.target.classList.contains('run')) {
       const id = e.target.id;
       const idSplit = id.split('-')[2];
       const snippetId = `code-snippet-${idSplit}`;
-      const dd = document.getElementById(`${snippetId}`).innerHTML;
-      let demo;
-      if (localStorage.getItem('demo') === null) {
-        demo = [];
-      } else {
-        demo = JSON.parse(localStorage.getItem('demo'))
-      }
-      demo.push({snip1: dd});
-      localStorage.setItem('demo', JSON.stringify(demo))
-      console.log(demo)
+      const textarea = `copyTextarea-${idSplit}`;
+
+      const copyText = document.getElementById(snippetId).innerHTML;
+      const copy = document.getElementById(textarea);
+      copy.value = copyText;
+      copy.select();
+      copy.setSelectionRange(0, 99999);
+
+      document.execCommand('copy');
+      e.target.textContent = 'Copied!';
     }
   })
-  // const runButtons = document.querySelectorAll('.run');
-  // runButtons.forEach(button => {
-  //   const id = button.id
-  //   console.log(button.id)
-  // })
 }
 
 export default runCode;

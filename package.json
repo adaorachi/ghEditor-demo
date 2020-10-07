@@ -12,7 +12,7 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
-    "snipdown": "^1.0.6"
+    "snipdown": "^1.0.8"
   },
   "devDependencies": {
     "css-loader": "^3.5.3",

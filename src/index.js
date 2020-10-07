@@ -1,5 +1,7 @@
 import snipDown from 'snipdown';
+import runCode from './runCode';
 import '../node_modules/snipdown/scss/style.scss';
+
 
 const opt1 = {
   container: 'snip1',
@@ -18,13 +20,11 @@ const opt1 = {
 };
 const sniptext1 = snipDown();
 sniptext1.markDown(opt1);
-sniptext1.setValue('# Intro\n\nGo ahead, play around with the editor! Be sure to check out **bold** and *italic* styling, or even [links](https://google.com). What about a ~~strikethrough~~ text or a direct mention @adaorachi You can type the Markdown syntax, use the header toolbar, utilize the inline toolbar or use shortcuts like `cmd-B`/ `ctrl-B` for bolded text OR `cmd-I`/ `ctrl-I` for italicized text and other avaliable shortcuts.\n\n > Here is a [link](url) to all available keyboard shortcuts for all buttons. \n\n## Lists Unordered lists can be started using the toolbar or by typing `* `, `- `, or `+ `. Ordered lists can be started by typing `1. `.\n#### Unordered\n\n- Lists are a piece of cake\n- I\'m sure you agree with me\n- Indented Tabs work too\n- Haha! I\'m sure you\'re trying it out now.\n\n#### Ordered\n1. Numbered lists...\n2. ...work too!\n\nAnd not just the lists. You should also try the tasklist too.\n\n - [ ] This is super useful for listing tasks.\n\n## What about images?\n![Yes](https://i.imgur.com/sZlktY7.png)')
+sniptext1.setValue('# Intro\n\nGo ahead, play around with the editor! Be sure to check out **bold** and *italic* styling, or even [links](https://google.com). What about a ~~strikethrough~~ text or a direct mention @adaorachi You can type the Markdown syntax, use the header toolbar, utilize the inline toolbar or use shortcuts like `cmd-B`/ `ctrl-B` for bolded text OR `cmd-I`/ `ctrl-I` for italicized text and other availiable shortcuts.\n\n > Here is a [link](url) to all available keyboard shortcuts for all buttons. \n\n## Lists Unordered lists can be started using the toolbar or by typing `* `, `- `, or `+ `. Ordered lists can be started by typing `1. `.\n#### Unordered\n\n- Lists are a piece of cake\n- I\'m sure you agree with me\n- Indented Tabs work too\n- Haha! I\'m sure you\'re trying it out now.\n\n#### Ordered\n1. Numbered lists...\n2. ...work too!\n\nAnd not just the lists. You should also try the tasklist too.\n\n - [ ] This is super useful for listing tasks.\n\n## What about images?\n![Yes](https://i.imgur.com/sZlktY7.png)')
 
 const opt2 = {
   container: 'snip2',
-  headerToolbar: {
-    icons: 'heading|bold|italic|',
-  },
+  
   inlineEmoji: {
     enabled: true,
   },
@@ -115,3 +115,5 @@ const opt7 = {
 const sniptext7 = snipDown();
 sniptext7.markDown(opt7);
 sniptext7.setValue('**Note:** a note is something that needs to be mentioned but is apart from the context.\n{: .note}\n\nThis is a paragraph\n{:: comment}\nThis is a comment which is completely ignored.\n{:/comment}\n... paragraph continues here.\n\nParagraph\n{: .class .class-1 #custom-id}\n\n## Heading {: .class .class-1 #custom-id-2}\n\nParagraph\n{: .class #custom-id-3 style="color:red"}\n\n- {: .class} List item with custom class\n- {:  #id} List item with custom id\n\nThis is a [link](https://google.es) in Spanish.\n{: hreflang="es"}\n\n![image alternative text](https://about.gitlab.com/images/handbook/marketing/markdown-guide-image-plain-text.png){: .shadow}')
+
+runCode();
