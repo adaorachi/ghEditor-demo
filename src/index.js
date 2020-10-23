@@ -23,9 +23,8 @@ gheditortext1.setValue('# Intro\n\nGo ahead, play around with the editor! Be sur
 
 const opt2 = {
   container: 'gheditor2',
-  
-  inlineEmoji: {
-    enabled: true,
+  headerToolbar: {
+    icons: 'heading|bold|italic|',
   },
 };
 const gheditortext2 = ghEditor();
@@ -51,9 +50,6 @@ gheditortext3.setValue('# Attach files by clicking or dragging and dropping on t
 
 const opt4 = {
   container: 'gheditor4',
-  uploadImage: {
-    enabled: false,
-  },
   headerToolbar: {
     icons: 'heading|bold|italic|',
   },
@@ -94,7 +90,7 @@ const opt6 = {
     enabled: false,
   },
   inlineToolbar: '',
-  inlineAttributes: true,
+  highlightCode: true,
 };
 const gheditortext6 = ghEditor();
 gheditortext6.markDown(opt6);
@@ -109,7 +105,7 @@ const opt7 = {
     enabled: false,
   },
   inlineToolbar: '',
-  highlightCode: true,
+  inlineAttributes: true,
 };
 const gheditortext7 = ghEditor();
 gheditortext7.markDown(opt7);
