@@ -12,7 +12,7 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
-    "snipdown": "^1.0.10"
+    "gheditor": "^1.0.1"
   },
   "devDependencies": {
     "css-loader": "^3.5.3",
