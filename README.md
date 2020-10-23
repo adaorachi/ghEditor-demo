@@ -1,1 +1,1 @@
-## Snip Down Editor Demo
+## GHEditor Demo
