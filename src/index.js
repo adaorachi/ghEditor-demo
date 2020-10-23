@@ -15,10 +15,6 @@ const opt1 = {
   splitScreen: {
     enabled: true,
   },
-  uploadImage: {
-    enabled: false,
-    config: { storageBucket: 'gheditor-editor.appspot.com' },
-  },
   toolbarEmoji: true,
 };
 const gheditortext1 = ghEditor();
@@ -46,7 +42,7 @@ const opt3 = {
   },
   uploadImage: {
     enabled: true,
-    config: { storageBucket: 'gheditor-editor.appspot.com' },
+    config: { storageBucket: 'snip-editor.appspot.com' },
   },
 };
 const gheditortext3 = ghEditor();
