@@ -1,4 +1,4 @@
-const runCode = () => {
+const runCode = (textarea) => {
   document.addEventListener('click', (e) => {
     if (e.target.classList.contains('run')) {
       const id = e.target.id;
@@ -15,6 +15,13 @@ const runCode = () => {
       document.execCommand('copy');
       e.target.textContent = 'Copied!';
     }
+  })
+
+  const form = document.getElementById('form');
+  const editable = document.querySelector('.editable-output');
+  form.addEventListener('submit', () => {
+    const output = textarea.syncValue()
+    editable.textContent = output;
   })
 }
 

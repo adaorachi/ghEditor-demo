@@ -22,26 +22,27 @@
     </div>
   </div>
   <div class="main-content container">
-    <form id="form">
-      <div class="form-group">
-        <h2 class="demo-title">Full Toolbar and Split-Screen</h2>
-        <p>This displays a full feature of the header toolbar icons, inline toolbar icons, <a href="https://github.com/adaorachi/ghEditor">keyboard shortcuts</a> for icons used for editing contents in the
-          editor. It also shows the split-screen features and the indented tab features. </p>
-        <div class="code-container">
-          <div>
-            <textarea class="form-control ghEditor" id="gheditor1">
+
+    <div class="form-group">
+      <h2 class="demo-title">Full Toolbar and Split-Screen</h2>
+      <p>This displays a full feature of the header toolbar icons, inline toolbar icons, <a
+          href="https://github.com/adaorachi/ghEditor">keyboard shortcuts</a> for icons used for editing contents in the
+        editor. It also shows the split-screen features and the indented tab features. </p>
+      <div class="code-container">
+        <div>
+          <textarea class="form-control ghEditor" id="gheditor1">
             </textarea>
-          </div>
-          <div class="editable-container">
-            <div class="code-header d-flex justify-content-between align-items-center">
-              <h6 class="mb-0 font-weight-bold">Code</h6>
-              <div class="editor-buttons">
-                <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor1">Copy Code</button>
-              </div>
+        </div>
+        <div class="editable-container">
+          <div class="code-header d-flex justify-content-between align-items-center">
+            <h6 class="mb-0 font-weight-bold">Code</h6>
+            <div class="editor-buttons">
+              <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor1">Copy Code</button>
             </div>
-            <div class="editable">
-              <textarea class="textarea" id="copyTextarea-gheditor1"></textarea>
-              <pre><code id="code-snippet-gheditor1">const gheditor1 = ghEditor();
+          </div>
+          <div class="editable">
+            <textarea class="textarea" id="copyTextarea-gheditor1"></textarea>
+            <pre><code id="code-snippet-gheditor1">const gheditor1 = ghEditor();
 gheditor1.markDown(
   container: 'textarea-1', // id of textarea
   headerToolbar: {
@@ -55,60 +56,65 @@ gheditor1.markDown(
   },
   toolbarEmoji: true,
 );</code></pre>
-            </div>
           </div>
-
         </div>
-      </div>
 
-      <div class="form-group">
-        <h2 class="demo-title">Include Emojis</h2>
-        <p>This lets you include cool emojis to your content. Start by inputting the emoji-prefix symbol - <b>":"</b>, followed by the emoji name you want. E.g - <b>:smile</b> The emoji dropdown is filtered according to your inputted value. By default, the symbol is the <b>":"</b>, but this can be changes in the <b>emojiPrefix</b> option. You can find the list of available emojis <a href="https://adaorachi.github.io/gheditor_emojis/emoji.json">here</a></p>
-        <div class="code-container">
-          <div>
-            <textarea class="form-control ghEditor" id="gheditor2">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <h2 class="demo-title">Include Emojis</h2>
+      <p>This lets you include cool emojis to your content. Start by inputting the emoji-prefix symbol - <b>":"</b>,
+        followed by the emoji name you want. E.g - <b>:smile</b> The emoji dropdown is filtered according to your
+        inputted value. By default, the symbol is the <b>":"</b>, but this can be changes in the <b>emojiPrefix</b>
+        option. You can find the list of available emojis <a
+          href="https://adaorachi.github.io/gheditor_emojis/emoji.json">here</a></p>
+      <div class="code-container">
+        <div>
+          <textarea class="form-control ghEditor" id="gheditor2">
             </textarea>
-          </div>
-          <div class="editable-container">
-            <div class="code-header d-flex justify-content-between align-items-center">
-              <h6 class="mb-0 font-weight-bold">Code</h6>
-              <div class="editor-buttons">
-                <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor2">Copy Code</button>
-              </div>
+        </div>
+        <div class="editable-container">
+          <div class="code-header d-flex justify-content-between align-items-center">
+            <h6 class="mb-0 font-weight-bold">Code</h6>
+            <div class="editor-buttons">
+              <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor2">Copy Code</button>
             </div>
-            <div class="editable">
-              <textarea class="textarea" id="copyTextarea-gheditor2"></textarea>
-              <pre><code id="code-snippet-gheditor2">const gheditor1 = ghEditor();
+          </div>
+          <div class="editable">
+            <textarea class="textarea" id="copyTextarea-gheditor2"></textarea>
+            <pre><code id="code-snippet-gheditor2">const gheditor1 = ghEditor();
 gheditor1.markDown(
   container: 'textarea-1', // id of textarea
   inlineEmoji: {
     enabled: true,
   }
 );</code></pre>
-            </div>
           </div>
-
         </div>
-      </div>
 
-      <div class="form-group">
-        <h2 class="demo-title">Upload Images</h2>
-        <p>This defines the upload image feature. This is configured to use the <a href="https://firebase.google.com/">google firebase</a> storage bucket.</p>
-        <div class="code-container">
-          <div>
-            <textarea class="form-control ghEditor" id="gheditor3">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <h2 class="demo-title">Upload Images</h2>
+      <p>This defines the upload image feature. This is configured to use the <a
+          href="https://firebase.google.com/">google firebase</a> storage bucket.</p>
+      <div class="code-container">
+        <div>
+          <textarea class="form-control ghEditor" id="gheditor3">
             </textarea>
-          </div>
-          <div class="editable-container">
-            <div class="code-header d-flex justify-content-between align-items-center">
-              <h6 class="mb-0 font-weight-bold">Code</h6>
-              <div class="editor-buttons">
-                <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor3">Copy Code</button>
-              </div>
+        </div>
+        <div class="editable-container">
+          <div class="code-header d-flex justify-content-between align-items-center">
+            <h6 class="mb-0 font-weight-bold">Code</h6>
+            <div class="editor-buttons">
+              <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor3">Copy Code</button>
             </div>
-            <div class="editable">
-              <textarea class="textarea" id="copyTextarea-gheditor3"></textarea>
-              <pre><code id="code-snippet-gheditor3">const gheditor1 = ghEditor();
+          </div>
+          <div class="editable">
+            <textarea class="textarea" id="copyTextarea-gheditor3"></textarea>
+            <pre><code id="code-snippet-gheditor3">const gheditor1 = ghEditor();
 gheditor1.markDown(
   container: 'textarea-1', // id of textarea
   uploadImage: {
@@ -116,32 +122,32 @@ gheditor1.markDown(
     config: { storageBucket: 'your-firebase-app-name.appspot.com' },
   }
 );</code></pre>
-            </div>
           </div>
-
         </div>
-      </div>
 
-      <div class="form-group">
-        <h2 class="demo-title">Autosaving</h2>
-        <p>This automatically saves the textarea content that is being written when the textarea is on <b>focus</b> and
-          will load it back in the future or when the page is refreshed. It saves at the time interval that is defined
-          in the <b>delay</b> attribute. The content can also be saved manually by clicking on the save icon. </p>
-        <div class="code-container">
-          <div>
-            <textarea class="form-control ghEditor" id="gheditor4">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <h2 class="demo-title">Autosaving</h2>
+      <p>This automatically saves the textarea content that is being written when the textarea is on <b>focus</b> and
+        will load it back in the future or when the page is refreshed. It saves at the time interval that is defined
+        in the <b>delay</b> attribute. The content can also be saved manually by clicking on the save icon. </p>
+      <div class="code-container">
+        <div>
+          <textarea class="form-control ghEditor" id="gheditor4">
             </textarea>
-          </div>
-          <div class="editable-container">
-            <div class="code-header d-flex justify-content-between align-items-center">
-              <h6 class="mb-0 font-weight-bold">Code</h6>
-              <div class="editor-buttons">
-                <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor4">Copy Code</button>
-              </div>
+        </div>
+        <div class="editable-container">
+          <div class="code-header d-flex justify-content-between align-items-center">
+            <h6 class="mb-0 font-weight-bold">Code</h6>
+            <div class="editor-buttons">
+              <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor4">Copy Code</button>
             </div>
-            <div class="editable">
-              <textarea class="textarea" id="copyTextarea-gheditor4"></textarea>
-              <pre><code id="code-snippet-gheditor4">const gheditor1 = ghEditor();
+          </div>
+          <div class="editable">
+            <textarea class="textarea" id="copyTextarea-gheditor4"></textarea>
+            <pre><code id="code-snippet-gheditor4">const gheditor1 = ghEditor();
 gheditor1.markDown(
   container: 'textarea-1', // id of textarea
   autoSave: {
@@ -149,91 +155,142 @@ gheditor1.markDown(
     delay: 5000,
   }
 );</code></pre>
-            </div>
           </div>
-
         </div>
-      </div>
 
-      <div class="form-group">
-        <h2 class="demo-title">Auto Use of FontAwesome</h2>
-        <p> This automatically includes <a href="https://fontawesome.com/">Font Awesome</a> and can be added in the
-          textarea input just like you would in an HTML markup </p>
-        <div class="code-container">
-          <div>
-            <textarea class="form-control ghEditor" id="gheditor5">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <h2 class="demo-title">Auto Use of FontAwesome</h2>
+      <p> This automatically includes <a href="https://fontawesome.com/">Font Awesome</a> and can be added in the
+        textarea input just like you would in an HTML markup </p>
+      <div class="code-container">
+        <div>
+          <textarea class="form-control ghEditor" id="gheditor5">
             </textarea>
-          </div>
-          <div class="editable-container">
-            <div class="code-header d-flex justify-content-between align-items-center">
-              <h6 class="mb-0 font-weight-bold">Code</h6>
-              <div class="editor-buttons">
-                <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor5">Copy Code</button>
-              </div>
+        </div>
+        <div class="editable-container">
+          <div class="code-header d-flex justify-content-between align-items-center">
+            <h6 class="mb-0 font-weight-bold">Code</h6>
+            <div class="editor-buttons">
+              <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor5">Copy Code</button>
             </div>
-            <div class="editable">
-              <textarea class="textarea" id="copyTextarea-gheditor5"></textarea>
-              <pre><code id="code-snippet-gheditor5">const gheditor1 = ghEditor();
+          </div>
+          <div class="editable">
+            <textarea class="textarea" id="copyTextarea-gheditor5"></textarea>
+            <pre><code id="code-snippet-gheditor5">const gheditor1 = ghEditor();
 gheditor1.markDown(
   container: 'textarea-1', // id of textarea
   autoUseFontAwesome: true
 );</code></pre>
-            </div>
           </div>
-
         </div>
-      </div>
 
-      <div class="form-group">
-        <h2 class="demo-title">Highlight Code</h2>
-        <p>This highlights codes in particular with language.</p>
-        <div class="code-container">
-          <div>
-            <textarea class="form-control ghEditor" id="gheditor6">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <h2 class="demo-title">Highlight Code</h2>
+      <p>This highlights codes in particular with language.</p>
+      <div class="code-container">
+        <div>
+          <textarea class="form-control ghEditor" id="gheditor6">
             </textarea>
-          </div>
-          <div class="editable-container">
-            <div class="code-header d-flex justify-content-between align-items-center">
-              <h6 class="mb-0 font-weight-bold">Code</h6>
-              <div class="editor-buttons">
-                <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor6">Copy Code</button>
-              </div>
+        </div>
+        <div class="editable-container">
+          <div class="code-header d-flex justify-content-between align-items-center">
+            <h6 class="mb-0 font-weight-bold">Code</h6>
+            <div class="editor-buttons">
+              <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor6">Copy Code</button>
             </div>
-            <div class="editable">
-              <textarea class="textarea" id="copyTextarea-gheditor6"></textarea>
-              <pre><code id="code-snippet-gheditor6">const gheditor1 = ghEditor();
+          </div>
+          <div class="editable">
+            <textarea class="textarea" id="copyTextarea-gheditor6"></textarea>
+            <pre><code id="code-snippet-gheditor6">const gheditor1 = ghEditor();
 gheditor1.markDown(
   container: 'textarea-1', // id of textarea
   highlightCode: true
 );</code></pre>
-            </div>
           </div>
-
         </div>
-      </div>
 
-      <div class="form-group">
-        <h2 class="demo-title">Use HTML Attributes with special characters</h2>
-        <p>You can also perform some cool features like defining inline CSS classes, and elements IDs and attributes with the use of curly braces - `{}`. In order to use this, Classes are defined with a period like so - `.class-1`. Ids are defined with an hash symbol - `#id-1`. Other attributes are defined just like you would for any HTML tag, like so - `aria-label="true"`. You can also define emphasized text like a note, create comment or higlight an image. </p>
-        <div class="code-container">
-          <div>
-            <textarea class="form-control ghEditor" id="gheditor7">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <h2 class="demo-title">Use HTML Attributes with special characters</h2>
+      <p>You can also perform some cool features like defining inline CSS classes, and elements IDs and attributes with
+        the use of curly braces - `{}`. In order to use this, Classes are defined with a period like so - `.class-1`.
+        Ids are defined with an hash symbol - `#id-1`. Other attributes are defined just like you would for any HTML
+        tag, like so - `aria-label="true"`. You can also define emphasized text like a note, create comment or higlight
+        an image. </p>
+      <div class="code-container">
+        <div>
+          <textarea class="form-control ghEditor" id="gheditor7">
             </textarea>
-          </div>
-          <div class="editable-container">
-            <div class="code-header d-flex justify-content-between align-items-center">
-              <h6 class="mb-0 font-weight-bold">Code</h6>
-              <div class="editor-buttons">
-                <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor7">Copy Code</button>
-              </div>
+        </div>
+        <div class="editable-container">
+          <div class="code-header d-flex justify-content-between align-items-center">
+            <h6 class="mb-0 font-weight-bold">Code</h6>
+            <div class="editor-buttons">
+              <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor7">Copy Code</button>
             </div>
-            <div class="editable">
-              <textarea class="textarea" id="copyTextarea-gheditor7"></textarea>
-              <pre><code id="code-snippet-gheditor7">const gheditor1 = ghEditor();
+          </div>
+          <div class="editable">
+            <textarea class="textarea" id="copyTextarea-gheditor7"></textarea>
+            <pre><code id="code-snippet-gheditor7">const gheditor1 = ghEditor();
 gheditor1.markDown(
   container: 'textarea-1', // id of textarea
   inlineAttributes: true,
 );</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <form id="form">
+      <div class="form-group">
+        <h2 class="demo-title">Output HTML Markup</h2>
+        <p>This syncs the text content of the editor to the default textarea and returns the content. Note that this method should be called when an action takes place; like an event listener in order to get the full content. See the editor content below.<br>Click the submit button to see HTML result.</p>
+        <div class="code-container">
+          <div>
+            <textarea class="form-control ghEditor" id="gheditor8">
+            </textarea>
+            <button type="submit" class="mt-4 btn btn-primary btn-sm run-html">Submit</button>
+          </div>
+          <div class="row flex-column">
+            <div class="col-12">
+              <div class="editable editable-container m-0 mt-4">
+                <div class="code-header d-flex justify-content-between align-items-center">
+                  <h6 class="mb-0 font-weight-bold">Output</h6>
+                </div>
+                <div class="editable editable-output"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="editable-container m-0 mt-4">
+                <div class="editable">
+                  <div class="code-header d-flex justify-content-between align-items-center">
+                    <h6 class="mb-0 font-weight-bold">Code</h6>
+                    <div class="editor-buttons">
+                      <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor8">Copy Code</button>
+                    </div>
+                  </div>
+                  <div class="editable">
+                    <textarea class="textarea" id="copyTextarea-gheditor8"></textarea><pre><code id="code-snippet-gheditor8">const gheditor1 = ghEditor();
+gheditor1.markDown(
+  container: 'textarea-1', // id of textarea
+);
+const form = document.getElementById('form');
+form.addEventListener('submit', () => {
+  const output = gheditor1.syncValue();
+  console.log(output);
+});</code></pre>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -253,7 +310,7 @@ gheditor1.markDown(
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script src="dist/main.js"></script>
+  <!-- <script src="dist/main.js"></script> -->
 </body>
 
 </html>

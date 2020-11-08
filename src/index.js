@@ -19,17 +19,18 @@ const opt1 = {
 };
 const gheditortext1 = ghEditor();
 gheditortext1.markDown(opt1);
-gheditortext1.setValue('# Intro\n\nGo ahead, play around with the editor! Be sure to check out **bold** and *italic* styling, or even [links](https://google.com). What about a ~~strikethrough~~ text or a direct mention @adaorachi You can type the Markdown syntax, use the header toolbar, utilize the inline toolbar or use shortcuts like `cmd-B`/ `ctrl-B` for bolded text OR `cmd-I`/ `ctrl-I` for italicized text and other availiable shortcuts.\n\n > Here is a [link](url) to all available keyboard shortcuts for all buttons. \n\n## Lists Unordered lists can be started using the toolbar or by typing `* `, `- `, or `+ `. Ordered lists can be started by typing `1. `.\n#### Unordered\n\n- Lists are a piece of cake\n- I\'m sure you agree with me\n- Indented Tabs work too\n- Haha! I\'m sure you\'re trying it out now.\n\n#### Ordered\n1. Numbered lists...\n2. ...work too!\n\nAnd not just the lists. You should also try the tasklist too.\n\n - [ ] This is super useful for listing tasks.\n\n## What about images?\n![Yes](https://i.imgur.com/sZlktY7.png)')
+gheditortext1.setValue('# GhEditor\n\nGhEditor is an all-in-one cloud-enabled file-storage, built-in autosaving, emoji-integrated, preview & split-screen JavaScript-powered HTML5 Markdown editor. An awesome web-based markdown editor!\n- Type some Markdown here\n- See the HTML result in the preview section or click the toolbar toggle button.\n- Magic, right!\n\nYou can also:\n- [ ] Use cool emojis just by typing the prefix symbol - : and it autocompletes with a list of emojis to choose from. (**check out this feature in the demo below!**)\n- [ ] Attach image files by selecting or dragging and dropping them (**requires your Google Firebase configuration to be linked**)\n- [ ] Make use of FontAwesome Icons (**check out this feature in the demo below!**)\n- [ ] Autosave your markdown content to in-built storage.\n- [ ] Split-screen to see live HTML result as you type.\n- [ ] Use inline toolbar. Select this word to see it!\n- [ ] Use the tab key for indentation and much more!\n\n> Instructions on how to use GHEditor in your own application are linked below.\n\n| Site | Links |\n| ------ | ------ |\n| Github | [Repo](https://github.com/adaorachi/ghEditor) |\n| NPM | [Installation](https://www.npmjs.com/package/gheditor) |\n| Github Wiki | [Cheat Sheet](https://github.com/adaorachi/ghEditor/wiki/markdown_cheat_sheet) |')
 
 const opt2 = {
   container: 'gheditor2',
   headerToolbar: {
     icons: 'heading|bold|italic|',
   },
+  indentWithTab: true,
 };
 const gheditortext2 = ghEditor();
 gheditortext2.markDown(opt2);
-gheditortext2.setValue('Oh, I give up! Give me words! Real words! They’re so much easier. 🍑 as much as I want to 🏃 from these cartoons, I ⛔️. They are rapidly seeping into the vernacular of the 🌐 It’s a ⚓️ or 🏊 situation.\n\nI get 📧 now with little characters in the subject line. My text messages and social media feeds are increasingly full of 😃 - only sentences or thoughts. Instagram, specifically, says nearly 4️⃣0️⃣ % of the text posts on its apps contain emojis. Domino’s even lets you order a pie now via tweet with just a 🍕.\n\nEmoji is the new lingua franca. And like learning any new language, brain power, practice and tricks are required—especially for an idiom that has 💩 and 👻 but no equal sign.')
+gheditortext2.setValue('Oh, I give up! Give me words! Real words! They’re so much easier. In as much as I want to 🏃 from these cartoons, I ⛔️. They are rapidly seeping into the vernacular of the 🌐 It’s a ⚓️ or 🏊 situation.\n\nI get 📧 now with little characters in the subject line. My text messages and social media feeds are increasingly full of 😃 - only sentences or thoughts. Instagram, specifically, says nearly 4️⃣0️⃣ % of the text posts on its apps contain emojis. Domino’s even lets you order a pie now via tweet with just a 🍕.\n\nEmoji is the new lingua franca. And like learning any new language, brain-power, practice, and tricks are required—especially for an idiom that has 💩 and 👻 but no equal sign.')
 
 const opt3 = {
   container: 'gheditor3',
@@ -111,4 +112,15 @@ const gheditortext7 = ghEditor();
 gheditortext7.markDown(opt7);
 gheditortext7.setValue('**Note:** a note is something that needs to be mentioned but is apart from the context.\n{: .note}\n\nThis is a paragraph\n{:: comment}\nThis is a comment which is completely ignored.\n{:/comment}\n... paragraph continues here.\n\nParagraph\n{: .class .class-1 #custom-id}\n\n## Heading {: .class .class-1 #custom-id-2}\n\nParagraph\n{: .class #custom-id-3 style="color:red"}\n\n- {: .class} List item with custom class\n- {:  #id} List item with custom id\n\nThis is a [link](https://google.es) in Spanish.\n{: hreflang="es"}\n\n![image alternative text](https://about.gitlab.com/images/handbook/marketing/markdown-guide-image-plain-text.png){: .shadow}')
 
-runCode();
+const opt8 = {
+  container: 'gheditor8',
+  headerToolbar: {
+    icons: 'heading|bold|italic|',
+  },
+};
+
+const gheditortext8 = ghEditor();
+gheditortext8.markDown(opt8);
+gheditortext8.setValue("# This outputs HTML markup. Feel free to add your markdown!");
+
+runCode(gheditortext8);
