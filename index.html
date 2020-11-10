@@ -18,7 +18,7 @@
     <div>
       <a href="https://github.com/adaorachi/ghEditor" class="button">View on GitHub</a>
       <a href="https://www.npmjs.com/package/gheditor" class="button">Install from NPM</a>
-      <a href="#" class="button">Download File</a>
+      <a href="https://github.com/adaorachi/ghEditor/archive/v1.7.zip" class="button">Download File</a>
     </div>
   </div>
   <div class="main-content container">
@@ -253,7 +253,9 @@ gheditor1.markDown(
     <form id="form">
       <div class="form-group">
         <h2 class="demo-title">Output HTML Markup</h2>
-        <p>This syncs the text content of the editor to the default textarea and returns the content. Note that this method should be called when an action takes place; like an event listener in order to get the full content. See the editor content below.<br>Click the submit button to see HTML result.</p>
+        <p>This syncs the text content of the editor to the default textarea and returns the content. Note that this
+          method should be called when an action takes place; like an event listener in order to get the full content.
+          See the editor content below.<br>Click the submit button to see HTML result.</p>
         <div class="code-container">
           <div>
             <textarea class="form-control ghEditor" id="gheditor8">
@@ -275,11 +277,13 @@ gheditor1.markDown(
                   <div class="code-header d-flex justify-content-between align-items-center">
                     <h6 class="mb-0 font-weight-bold">Code</h6>
                     <div class="editor-buttons">
-                      <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor8">Copy Code</button>
+                      <button type="button" class="btn btn-primary btn-sm run" id="run-code-gheditor8">Copy
+                        Code</button>
                     </div>
                   </div>
                   <div class="editable">
-                    <textarea class="textarea" id="copyTextarea-gheditor8"></textarea><pre><code id="code-snippet-gheditor8">const gheditor1 = ghEditor();
+                    <textarea class="textarea" id="copyTextarea-gheditor8"></textarea>
+                    <pre><code id="code-snippet-gheditor8">const gheditor1 = ghEditor();
 gheditor1.markDown(
   container: 'textarea-1', // id of textarea
 );
@@ -310,7 +314,8 @@ form.addEventListener('submit', () => {
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="dist/main.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/gh/adaorachi/ghEditor@1.7/@gheditor/dist/main.js"></script> -->
+  <script src="./dist/main.js"></script>
 </body>
 
 </html>
