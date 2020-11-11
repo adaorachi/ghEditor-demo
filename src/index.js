@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     uploadImage: {
       enabled: true,
-      // config: { storageBucket: 'snip-editor.appspot.com' },
+      config: { storageBucket: 'snip-editor.appspot.com' },
     },
   };
   const gheditortext3 = ghEditor();
