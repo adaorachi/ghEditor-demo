@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>GHEditor Editor Demo</title>
+  <title>GHEditor Demo</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@
           <div class="editable">
             <textarea class="textarea" id="copyTextarea-gheditor1"></textarea>
             <pre><code id="code-snippet-gheditor1">const gheditor1 = ghEditor();
-gheditor1.markDown(
+gheditor1.markDown({
   container: 'textarea-1', // id of textarea
   headerToolbar: {
     icons: 'heading|bold|italic|blockquote|strikethrough|horizontal-rule|code|link|code-block|unordered-list|ordered-list|tasklist|mention|image|table|'
@@ -55,7 +55,7 @@ gheditor1.markDown(
     enabled: true,
   },
   toolbarEmoji: true,
-);</code></pre>
+});</code></pre>
           </div>
         </div>
 
@@ -84,12 +84,12 @@ gheditor1.markDown(
           <div class="editable">
             <textarea class="textarea" id="copyTextarea-gheditor2"></textarea>
             <pre><code id="code-snippet-gheditor2">const gheditor1 = ghEditor();
-gheditor1.markDown(
+gheditor1.markDown({
   container: 'textarea-1', // id of textarea
   inlineEmoji: {
     enabled: true,
   }
-);</code></pre>
+});</code></pre>
           </div>
         </div>
 
@@ -115,13 +115,13 @@ gheditor1.markDown(
           <div class="editable">
             <textarea class="textarea" id="copyTextarea-gheditor3"></textarea>
             <pre><code id="code-snippet-gheditor3">const gheditor1 = ghEditor();
-gheditor1.markDown(
+gheditor1.markDown({
   container: 'textarea-1', // id of textarea
   uploadImage: {
     enabled: true,
     config: { storageBucket: 'your-firebase-app-name.appspot.com' },
   }
-);</code></pre>
+});</code></pre>
           </div>
         </div>
 
@@ -148,13 +148,13 @@ gheditor1.markDown(
           <div class="editable">
             <textarea class="textarea" id="copyTextarea-gheditor4"></textarea>
             <pre><code id="code-snippet-gheditor4">const gheditor1 = ghEditor();
-gheditor1.markDown(
+gheditor1.markDown({
   container: 'textarea-1', // id of textarea
   autoSave: {
     enabled: true,
     delay: 5000,
   }
-);</code></pre>
+});</code></pre>
           </div>
         </div>
 
@@ -180,10 +180,10 @@ gheditor1.markDown(
           <div class="editable">
             <textarea class="textarea" id="copyTextarea-gheditor5"></textarea>
             <pre><code id="code-snippet-gheditor5">const gheditor1 = ghEditor();
-gheditor1.markDown(
+gheditor1.markDown({
   container: 'textarea-1', // id of textarea
   autoUseFontAwesome: true
-);</code></pre>
+});</code></pre>
           </div>
         </div>
 
@@ -208,10 +208,10 @@ gheditor1.markDown(
           <div class="editable">
             <textarea class="textarea" id="copyTextarea-gheditor6"></textarea>
             <pre><code id="code-snippet-gheditor6">const gheditor1 = ghEditor();
-gheditor1.markDown(
+gheditor1.markDown({
   container: 'textarea-1', // id of textarea
   highlightCode: true
-);</code></pre>
+});</code></pre>
           </div>
         </div>
 
@@ -240,10 +240,10 @@ gheditor1.markDown(
           <div class="editable">
             <textarea class="textarea" id="copyTextarea-gheditor7"></textarea>
             <pre><code id="code-snippet-gheditor7">const gheditor1 = ghEditor();
-gheditor1.markDown(
+gheditor1.markDown({
   container: 'textarea-1', // id of textarea
   inlineAttributes: true,
-);</code></pre>
+});</code></pre>
           </div>
         </div>
 
@@ -284,9 +284,9 @@ gheditor1.markDown(
                   <div class="editable">
                     <textarea class="textarea" id="copyTextarea-gheditor8"></textarea>
                     <pre><code id="code-snippet-gheditor8">const gheditor1 = ghEditor();
-gheditor1.markDown(
+gheditor1.markDown({
   container: 'textarea-1', // id of textarea
-);
+});
 const form = document.getElementById('form');
 form.addEventListener('submit', () => {
   const output = gheditor1.syncValue();
@@ -301,6 +301,7 @@ form.addEventListener('submit', () => {
         </div>
       </div>
     </form>
+
     <div class="guide">
       <a href="https://github.com/adaorachi/ghEditor/wiki/markdown_cheat_sheet" class="view-guide">View Guide</a>
     </div>
